@@ -1,0 +1,5 @@
+FROM zmkfirmware/zmk-build-arm:2.5
+COPY . .
+RUN ["west", "init", "-l", "config"]
+RUN ["west", "update"]
+RUN ["west", "zephyr-export"]

@@ -1,0 +1,19 @@
+{
+  "name": "zmk-config-corne-demo",
+  "version": "1.0.0",
+  "description": "This is a customization of the ZMK config for the Corne keyboard with machine\r readable layout and keymap definitions for use with my [keymap-editor] tool.",
+  "main": "index.js",
+  "scripts": {
+    "make": "docker-compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panzerstadt/zmk-config-corne-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panzerstadt/zmk-config-corne-demo/issues"
+  },
+  "homepage": "https://github.com/panzerstadt/zmk-config-corne-demo#readme"
+}

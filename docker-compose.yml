@@ -1,0 +1,18 @@
+services:
+  zmk:
+    build:
+      context: .
+      dockerfile: Dockerfile-zmk
+    image: docker-zmk
+
+  keymap:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./zmk-build:/build/output/zephyr
+    depends_on:
+      - zmk
+
+volumes:
+  zmk-build: null
